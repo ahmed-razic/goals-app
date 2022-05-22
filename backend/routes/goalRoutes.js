@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const {
-  getGoals,
+  getGoal,
   setGoal,
   updateGoal,
   deleteGoal,
@@ -9,7 +9,7 @@ const {
 
 //option 1 - shorter
 
-router.route('/').get(getGoals).post(setGoal)
+router.route('/').get(getGoal).post(setGoal)
 router.route('/:id').put(updateGoal).delete(deleteGoal)
 
 //Option 2
