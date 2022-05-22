@@ -6,11 +6,11 @@ const getGoals = (req, res) => {
   res.status(200).json({ message: 'Get Goals' })
 }
 
-//@desc   Set goals
+//@desc   Set goal
 //@route  POST /api/goals
 //access  Private
 
-const setGoals = (req, res) => {
+const setGoal = (req, res) => {
   res.status(200).json({ message: 'Set goals' })
 }
 
@@ -32,7 +32,7 @@ const deleteGoal = (req, res) => {
 
 module.exports = {
   getGoals,
-  setGoals,
+  setGoal,
   updateGoal,
   deleteGoal,
 }
